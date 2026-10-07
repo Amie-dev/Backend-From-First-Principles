@@ -1,0 +1,28 @@
+{
+  "name": "day01-express-backend-from-first-principles",
+  "version": "1.0.0",
+  "description": "Day 01 - Express.js backend implementation of core HTTP principles (ES Modules)",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "raw-server": "node src/raw-http-server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "http",
+    "express",
+    "backend",
+    "statelessness",
+    "cors",
+    "caching",
+    "etag",
+    "sse",
+    "streaming",
+    "esm"
+  ],
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
