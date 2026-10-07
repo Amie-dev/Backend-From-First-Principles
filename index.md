@@ -1,10 +1,10 @@
-# 📚 Backend From First Principles — Notes Index
+# 📚 Backend From First Principles — Master Notes Index
 
 Welcome to the master index of theoretical notes for **Backend From First Principles**. Each chapter provides first-principles architectural explanations, protocol diagrams, and code demonstrations.
 
 ---
 
-##  Day 01: HTTP & Backend Fundamentals
+## 🚀 Day 01: HTTP & Backend Fundamentals
 
 | Chapter | Title & Key Topics | Quick Link |
 | :--- | :--- | :---: |
@@ -20,3 +20,17 @@ Welcome to the master index of theoretical notes for **Backend From First Princi
 | 0️⃣9️⃣ **Chapter 09** | **Content Negotiation & Compression**<br>• Quality Values ($q$-factors) in `Accept` headers • Gzip & Brotli (`br`) Compression • `Vary` Header Protection | [Read Chapter 09](./day01/notes/09-content-negotiation-and-compression.md) |
 | 1️⃣0️⃣ **Chapter 10** | **Handling Large Data Transfers**<br>• `multipart/form-data` Boundaries • RAM-efficient Disk Pipe Streaming (`req.pipe()`) • Server-Sent Events (SSE) | [Read Chapter 10](./day01/notes/10-large-data-transfers.md) |
 | 1️⃣1️⃣ **Chapter 11** | **Security, SSL/TLS & HTTPS**<br>• HTTPS Encrypted Tunnel • Symmetric vs Asymmetric Cryptography • TLS 1.3 Handshake Sequence | [Read Chapter 11](./day01/notes/11-https-and-tls-security.md) |
+
+---
+
+## 🗺️ Day 02: Routing & URL Architecture
+
+| Chapter | Title & Key Topics | Quick Link |
+| :--- | :--- | :---: |
+| 📖 **Overview** | **Day 02 Notes Overview**<br>• Complete Day 02 Routing Curriculum & Learning Map | [Read Overview](./day02/notes/README.md) |
+| 0️⃣1️⃣ **Chapter 01** | **What is Routing?**<br>• HTTP Verbs ("What") vs Paths ("Where") • Dispatch Key Resolution • Route Handlers | [Read Chapter 01](./day02/notes/01-what-is-routing.md) |
+| 0️⃣2️⃣ **Chapter 02** | **Static & Dynamic Routes**<br>• Fixed URL paths • Dynamic Path Parameters (`:id`) • Extracting Identifiers | [Read Chapter 02](./day02/notes/02-static-and-dynamic-routes.md) |
+| 0️⃣3️⃣ **Chapter 03** | **Query Parameters & Search Filtering**<br>• Query String syntax (`?key=val`) • Pagination (`page=2`) • Sorting & Searching in GET requests | [Read Chapter 03](./day02/notes/03-query-parameters.md) |
+| 0️⃣4️⃣ **Chapter 04** | **Nested Routes & Hierarchical Resources**<br>• Parent-Child Resource Relational Hierarchies (`/users/:userId/posts/:postId`) • Express `{ mergeParams: true }` | [Read Chapter 04](./day02/notes/04-nested-routes.md) |
+| 0️⃣5️⃣ **Chapter 05** | **Route Versioning & Deprecation**<br>• `/api/v1` vs `/api/v2` • Managing Breaking Changes • `Deprecation` & `Sunset` RFC 8594 Headers | [Read Chapter 05](./day02/notes/05-route-versioning-and-deprecation.md) |
+| 0️⃣6️⃣ **Chapter 06** | **Catch-All Routes & Fallback Handlers**<br>• Wildcard (`*`) Routing • Pipeline Precedence Order • RFC 404 Not Found JSON Envelopes | [Read Chapter 06](./day02/notes/06-catch-all-routes.md) |
