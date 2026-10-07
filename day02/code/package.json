@@ -1,0 +1,26 @@
+{
+  "name": "day02-express-routing-from-first-principles",
+  "version": "1.0.0",
+  "description": "Day 02 - Express.js backend implementation of Routing & URL Architecture (ES Modules)",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "raw-router": "node src/raw-router-dispatcher.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "routing",
+    "express",
+    "backend",
+    "path-parameters",
+    "query-parameters",
+    "nested-routes",
+    "route-versioning",
+    "catch-all",
+    "esm"
+  ],
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
