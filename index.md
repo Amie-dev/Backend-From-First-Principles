@@ -34,3 +34,17 @@ Welcome to the master index of theoretical notes for **Backend From First Princi
 | 0️⃣4️⃣ **Chapter 04** | **Nested Routes & Hierarchical Resources**<br>• Parent-Child Resource Relational Hierarchies (`/users/:userId/posts/:postId`) • Express `{ mergeParams: true }` | [Read Chapter 04](./day02/notes/04-nested-routes.md) |
 | 0️⃣5️⃣ **Chapter 05** | **Route Versioning & Deprecation**<br>• `/api/v1` vs `/api/v2` • Managing Breaking Changes • `Deprecation` & `Sunset` RFC 8594 Headers | [Read Chapter 05](./day02/notes/05-route-versioning-and-deprecation.md) |
 | 0️⃣6️⃣ **Chapter 06** | **Catch-All Routes & Fallback Handlers**<br>• Wildcard (`*`) Routing • Pipeline Precedence Order • RFC 404 Not Found JSON Envelopes | [Read Chapter 06](./day02/notes/06-catch-all-routes.md) |
+
+---
+
+## ⚡ Day 03: Serialization & Deserialization
+
+| Chapter | Title & Key Topics | Quick Link |
+| :--- | :--- | :---: |
+| 📖 **Overview** | **Day 03 Notes Overview**<br>• Complete Day 03 Serialization & Deserialization Overview | [Read Overview](./day03/notes/README.md) |
+| 0️⃣1️⃣ **Chapter 01** | **The Language Barrier & Need for Serialization**<br>• Incompatible memory layouts • Heterogeneous client-server environments • Universal wire formats | [Read Chapter 01](./day03/notes/01-language-barrier-and-serialization-need.md) |
+| 0️⃣2️⃣ **Chapter 02** | **Serialization & Deserialization Fundamentals**<br>• Definitions • Mathematical model ($\mathcal{S}$ and $\mathcal{D}$) • Complete 7-step HTTP request/response lifecycle | [Read Chapter 02](./day03/notes/02-serialization-deserialization-fundamentals.md) |
+| 0️⃣3️⃣ **Chapter 03** | **Text-Based Formats vs Binary Formats**<br>• JSON, YAML, XML vs Protobuf, Avro, MessagePack • Comparative trade-offs & payload size benchmarks | [Read Chapter 03](./day03/notes/03-text-vs-binary-formats.md) |
+| 0️⃣4️⃣ **Chapter 04** | **Deep Dive into JSON (Industry Standard)**<br>• Strict syntax rules • Allowed vs unsupported types • JSON traps (`BigInt`, `Date`, `undefined`, circular refs) | [Read Chapter 04](./day03/notes/04-deep-dive-into-json.md) |
+| 0️⃣5️⃣ **Chapter 05** | **OSI Layers & Network Mental Model**<br>• Layer 7 abstraction • Packetization of JSON into TCP/IP frames & bits • Network payload stream reassembly | [Read Chapter 05](./day03/notes/05-osi-layers-and-network-mental-model.md) |
+| 0️⃣6️⃣ **Chapter 06** | **Express/Node.js Deserialization & Body Parsing**<br>• Under the hood of `express.json()` • Stream buffer consumption (`data`/`end` events) • DoS payload limits & security error handling | [Read Chapter 06](./day03/notes/06-express-node-deserialization-and-body-parsing.md) |
