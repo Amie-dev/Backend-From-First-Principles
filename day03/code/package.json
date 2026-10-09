@@ -1,0 +1,30 @@
+{
+  "name": "day03-serialization-deserialization-from-first-principles",
+  "version": "1.0.0",
+  "description": "Day 03 - Serialization & Deserialization in Express/Node.js from first principles (ES Modules)",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "raw-parser": "node src/raw-json-parser.js",
+    "wire-benchmark": "node src/wire-format-benchmark.js",
+    "safe-json": "node src/safe-json-serializer.js",
+    "osi-simulator": "node src/osi-packet-simulator.js"
+  },
+  "keywords": [
+    "serialization",
+    "deserialization",
+    "json",
+    "body-parser",
+    "express",
+    "backend",
+    "binary-buffer",
+    "osi-layers",
+    "tcp-streams",
+    "esm"
+  ],
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
