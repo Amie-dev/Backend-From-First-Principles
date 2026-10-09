@@ -150,31 +150,15 @@ This project strips away framework abstractions to help you master the core prin
 Backend-From-First-Principles/
 ├── index.md                             # Master Table of Contents & Theory Notes Index
 ├── readme.md                            # Main Project Documentation & Curriculum
-└── day01/                               # Day 01: Core HTTP & Express Backend Deep Dive
-    ├── notes/                           # 📚 11 Theory Notes (Markdown)
-    │   ├── README.md                    # Notes Overview
-    │   ├── 01-core-principles.md        # Statelessness & Client-Server Architecture
-    │   ├── 02-http-versions-and-transport.md # Transport Protocols & HTTP Evolution
-    │   ├── 03-http-message-anatomy.md   # Raw Message Anatomy & CRLF Boundaries
-    │   ├── 04-http-headers.md           # HTTP Headers & Security Controls
-    │   ├── 05-http-methods-and-idempotency.md # REST Verbs & Idempotency Matrix
-    │   ├── 06-cors-and-security-policies.md # Same-Origin Policy & CORS Preflight
-    │   ├── 07-http-status-codes.md      # Standardized Status Codes & Error Handling
-    │   ├── 08-http-caching.md           # Cache-Control, ETag, 304 Revalidation
-    │   ├── 09-content-negotiation-and-compression.md # Gzip/Brotli Compression
-    │   ├── 10-large-data-transfers.md   # Streaming Uploads & Server-Sent Events
-    │   └── 11-https-and-tls-security.md # Security, TLS 1.3 Handshake & HTTPS
-    └── code/                            # 💻 Production-Grade Express Codebase (ES Modules)
-        ├── package.json                 # Node.js dependencies ("type": "module")
-        ├── README.md                    # Express Codebase Quickstart & Testing Guide
-        ├── implementation-guide/        # 📖 11 Step-by-Step Copy-Pasteable Guides
-        └── src/                         # JavaScript Source Code
-            ├── server.js                # Server Launcher
-            ├── app.js                   # Express Application Wiring
-            ├── raw-http-server.js       # First-Principles Raw TCP Socket HTTP Server
-            ├── errors/                  # Custom API Error Hierarchy
-            ├── middlewares/             # Auth, CORS, ETag, Security, Compression, Errors
-            └── controllers/             # REST Controllers & Streaming Handlers
+├── day01/                               # Day 01: Core HTTP & Express Backend Deep Dive
+│   ├── notes/                           # 📚 11 Theory Notes (Markdown)
+│   └── code/                            # 💻 Production-Grade Express Codebase
+├── day02/                               # Day 02: Express Routing & URL Architecture
+│   ├── notes/                           # 📚 6 Theory Notes (Markdown)
+│   └── code/                            # 💻 Production-Grade Express Routing Codebase
+└── day03/                               # Day 03: Serialization & Deserialization Deep Dive
+    ├── notes/                           # 📚 6 Theory Notes (Markdown)
+    └── code/                            # 💻 Express / Node.js Serialization Codebase & Benchmarks
 ```
 
 ---
