@@ -58,6 +58,11 @@ function sendRequest(bodyText, label, callback) {
     }
   );
 
+  req.on("error", (err) => {
+    console.log(`HTTP Client Handled Error : ${err.code} (${err.message}) [Expected when socket destroyed]`);
+    callback();
+  });
+
   req.write(bodyText);
   req.end();
 }
