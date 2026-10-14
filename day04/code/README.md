@@ -63,6 +63,17 @@ Set `SEED_DEMO_DATA=false` to start with an empty user table.
 
 ---
 
+## 🧭 Step-by-Step Implementation Guide
+
+Prefer to build this codebase yourself rather than read the finished article? The
+**[implementation-guide](./implementation-guide/README.md)** walks through every file in the order
+they depend on each other: setup → config → bcrypt → registration → login → JWTs → refresh
+rotation → cookies → AuthN gate → RBAC/anti-BOLA → API keys → CORS & limits → errors/audit →
+pipeline assembly → tests. Each guide contains the real source, a line-by-line rationale, and the
+`curl`/`node` command that proves it works.
+
+---
+
 ## 🧱 The 7-Stage Request Pipeline (Ch09)
 
 ```
@@ -87,6 +98,7 @@ day04/code
 ├── .env / .env.example          # 12-Factor config (secrets, TTLs, CORS, limits)
 ├── package.json                 # express · jsonwebtoken · bcrypt · dotenv
 ├── test/auth.e2e.test.js        # 38 end-to-end tests (node:test)
+├── implementation-guide/        # 📚 15 step-by-step build guides (see README there)
 └── src
     ├── app.js                   # pipeline assembly (stages ①–⑦)
     ├── server.js                # boot, fail-fast guards, graceful shutdown

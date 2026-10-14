@@ -169,5 +169,5 @@ Backend-From-First-Principles/
 ## 🤝 How to Use This Repository
 
 1. **Study the Theory**: Start with the **[Theory Notes Index](./index.md)** to build a conceptual understanding of each system component.
-2. **Follow the Implementation Guides**: Read through **[day01/code/implementation-guide](./day01/code/implementation-guide/README.md)** for step-by-step code walkthroughs.
-3. **Run and Test the Code**: Explore **[day01/code](./day01/code/README.md)**, run the Express server, and execute the provided `cURL` commands to see the principles in action.
+2. **Follow the Implementation Guides**: Read through **[day01/code/implementation-guide](./day01/code/implementation-guide/README.md)** for HTTP fundamentals and **[day04/code/implementation-guide](./day04/code/implementation-guide/README.md)** for authentication & authorization (JWT, bcrypt, CORS, RBAC, API keys) — each guide walks through the real source with a line-by-line rationale.
+3. **Run and Test the Code**: Explore **[day01/code](./day01/code/README.md)** and **[day04/code](./day04/code/README.md)**, run the servers (`npm start`), execute the provided `cURL` commands, and run the test suites (`npm test`) to see the principles in action.
