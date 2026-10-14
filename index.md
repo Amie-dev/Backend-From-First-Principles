@@ -65,3 +65,37 @@ Welcome to the master index of theoretical notes for **Backend From First Princi
 | 0️⃣7️⃣ **Chapter 07** | **Cryptographic Password Storage & Hashing**<br>• Encoding vs encryption vs hashing • Why MD5/SHA-256 fail • Argon2id & bcrypt work factors • Salts & cost calibration | [Read Chapter 07](./day04/notes/07-password-hashing-and-cryptographic-storage.md) |
 | 0️⃣8️⃣ **Chapter 08** | **Threat Modeling, Attacks & Defensive Countermeasures**<br>• HTTP 401 vs 403 semantics • Brute-force & credential stuffing • User-enumeration elimination • Timing attacks & dummy hashing | [Read Chapter 08](./day04/notes/08-security-attacks-threat-modeling-and-defenses.md) |
 | 0️⃣9️⃣ **Chapter 09** | **End-to-End Request Pipeline & Engineering Roadmap**<br>• Complete 7-stage secure request pipeline • 18-point production checklist • Hands-on projects & self-assessment | [Read Chapter 09](./day04/notes/09-end-to-end-request-lifecycle-and-project-roadmap.md) |
+
+---
+
+## 💻 Code Implementation Guides (Hands-on Builds)
+
+Every day's theory is paired with a **runnable, production-shaped codebase** and a step-by-step
+**implementation guide**: the real source file by file, a line-by-line rationale for *why* each
+line is written that way (and which attack it prevents), plus the exact `curl` / `node` / `npm`
+command that proves it works.
+
+| Day | Codebase | Implementation Guide | Stack & Focus |
+| :--- | :--- | :---: | :--- |
+| **Day 01** | [`day01/code`](./day01/code/README.md) | [11 guides](./day01/code/implementation-guide/README.md) | Express + raw TCP HTTP parser, stateless JWT, security headers, custom CORS, ETag caching, compression, streaming/SSE |
+| **Day 02** | [`day02/code`](./day02/code/README.md) | [6 guides](./day02/code/implementation-guide/README.md) | Low-level router dispatcher, static/dynamic & nested routes, query params + pagination, route versioning, catch-all |
+| **Day 03** | [`day03/code`](./day03/code/README.md) | [5 guides](./day03/code/implementation-guide/README.md) | Custom JSON body parser, text vs binary wire formats, JSON edge cases, OSI stream reassembly, size benchmarks |
+| **Day 04** | [`day04/code`](./day04/code/README.md) | [15 guides](./day04/code/implementation-guide/README.md) | **JWT (`jsonwebtoken`) + bcrypt + `.env` + CORS** auth API: refresh rotation & breach detection, RBAC + anti-BOLA, API keys/M2M, sliding-window rate limits, audit logging · **38 e2e tests** |
+
+### 🔐 Day 04 guide map — the AuthN/AuthZ build order
+
+| # | Build step | # | Build step |
+| :---: | :--- | :---: | :--- |
+| **01** | [Project setup, dependencies & layering](./day04/code/implementation-guide/01-project-setup-and-dependencies.md) | **09** | [The authentication gate (AuthN middleware)](./day04/code/implementation-guide/09-authentication-middleware.md) |
+| **02** | [Typed `.env` config & fail-fast production guards](./day04/code/implementation-guide/02-environment-configuration-and-fail-fast-guards.md) | **10** | [RBAC, ownership & anti-BOLA](./day04/code/implementation-guide/10-authorization-rbac-and-anti-bola.md) |
+| **03** | [bcrypt password storage, policy & upgrades](./day04/code/implementation-guide/03-bcrypt-password-hashing.md) | **11** | [API keys & machine-to-machine auth](./day04/code/implementation-guide/11-api-keys-and-machine-to-machine-auth.md) |
+| **04** | [User store, email normalisation & registration](./day04/code/implementation-guide/04-user-store-and-registration.md) | **12** | [CORS, security headers & rate limiting](./day04/code/implementation-guide/12-cors-security-headers-and-rate-limiting.md) |
+| **05** | [Login & credential-attack defences](./day04/code/implementation-guide/05-login-and-credential-attack-defences.md) | **13** | [Error handling, audit logging & safe egress](./day04/code/implementation-guide/13-error-handling-audit-logging-and-safe-egress.md) |
+| **06** | [Stateless JWT access tokens](./day04/code/implementation-guide/06-jwt-access-token-implementation.md) | **14** | [Pipeline assembly, routing & graceful shutdown](./day04/code/implementation-guide/14-pipeline-assembly-and-graceful-shutdown.md) |
+| **07** | [Refresh-token rotation & breach detection](./day04/code/implementation-guide/07-refresh-token-rotation-and-breach-detection.md) | **15** | [Testing & verification playbook (38 e2e tests)](./day04/code/implementation-guide/15-testing-and-verification-playbook.md) |
+| **08** | [Cookies & session transport security](./day04/code/implementation-guide/08-cookie-and-session-transport-security.md) | — | _Run it:_ `cd day04/code && npm install && npm test && npm start` |
+
+> **Suggested path for Day 04:** read the [chapter notes](./day04/notes/README.md), then build the
+> codebase in guide order (01 → 15). Each guide ends with a verification command so you always know
+> your implementation matches the intended behaviour before moving on.
+
