@@ -1,0 +1,35 @@
+{
+  "name": "day04-auth-from-first-principles",
+  "version": "1.0.0",
+  "description": "Day 04 - Authentication & Authorization: Sessions, JWTs, API Keys, RBAC, and Threat Defenses from First Principles (ES Modules)",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js",
+    "test:watch": "node --test --watch test/*.test.js"
+  },
+  "keywords": [
+    "authentication",
+    "authorization",
+    "jwt",
+    "sessions",
+    "rbac",
+    "api-keys",
+    "oauth2",
+    "oidc",
+    "password-hashing",
+    "rate-limiting",
+    "brute-force-defense",
+    "timing-attack-defense",
+    "backend",
+    "esm"
+  ],
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.3",
+    "jsonwebtoken": "^9.0.3"
+  }
+}

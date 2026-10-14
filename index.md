@@ -48,3 +48,20 @@ Welcome to the master index of theoretical notes for **Backend From First Princi
 | 0️⃣4️⃣ **Chapter 04** | **Deep Dive into JSON (Industry Standard)**<br>• Strict syntax rules • Allowed vs unsupported types • JSON traps (`BigInt`, `Date`, `undefined`, circular refs) | [Read Chapter 04](./day03/notes/04-deep-dive-into-json.md) |
 | 0️⃣5️⃣ **Chapter 05** | **OSI Layers & Network Mental Model**<br>• Layer 7 abstraction • Packetization of JSON into TCP/IP frames & bits • Network payload stream reassembly | [Read Chapter 05](./day03/notes/05-osi-layers-and-network-mental-model.md) |
 | 0️⃣6️⃣ **Chapter 06** | **Express/Node.js Deserialization & Body Parsing**<br>• Under the hood of `express.json()` • Stream buffer consumption (`data`/`end` events) • DoS payload limits & security error handling | [Read Chapter 06](./day03/notes/06-express-node-deserialization-and-body-parsing.md) |
+
+---
+
+## 🔐 Day 04: Authentication & Authorization
+
+| Chapter | Title & Key Topics | Quick Link |
+| :--- | :--- | :---: |
+| 📖 **Overview** | **Day 04 Notes Overview**<br>• Complete Day 04 AuthN/AuthZ Curriculum, Learning Objectives & Dual-Gatekeeper Mental Model | [Read Overview](./day04/notes/README.md) |
+| 0️⃣1️⃣ **Chapter 01** | **AuthN vs. AuthZ & The Evolution of Identity**<br>• Authentication vs Authorization boundary • 5-era identity evolution • Dual Gatekeeper architecture & middleware separation | [Read Chapter 01](./day04/notes/01-authn-vs-authz-and-identity-evolution.md) |
+| 0️⃣2️⃣ **Chapter 02** | **Stateless HTTP & The Core Triad (Sessions, JWTs, Cookies)**<br>• HTTP statelessness • In-memory/Redis sessions • JWT anatomy (`header.payload.signature`) • `HttpOnly`/`Secure`/`SameSite` cookie flags | [Read Chapter 02](./day04/notes/02-stateless-http-and-the-core-triad-sessions-jwt-cookies.md) |
+| 0️⃣3️⃣ **Chapter 03** | **Stateful vs. Stateless vs. Hybrid Architectures**<br>• Centralized Redis revocation • Stateless token scaling • Hybrid model • Refresh Token Rotation (RTR) & token-family reuse detection | [Read Chapter 03](./day04/notes/03-stateful-vs-stateless-vs-hybrid-architectures.md) |
+| 0️⃣4️⃣ **Chapter 04** | **API Keys & Machine-to-Machine (M2M) Authentication**<br>• M2M vs user authentication • Stripe-style key anatomy (`sk_live_…`) • SHA-256 storage • Key scopes & per-key rate limiting | [Read Chapter 04](./day04/notes/04-api-keys-and-machine-to-machine-auth.md) |
+| 0️⃣5️⃣ **Chapter 05** | **Delegated Access & Federation (OAuth 2.0 & OIDC)**<br>• The 4 OAuth roles • Authorization Code Flow with PKCE (`code_verifier`/`code_challenge`) • ID token vs access token • "Sign in with Google" | [Read Chapter 05](./day04/notes/05-oauth2-and-openid-connect.md) |
+| 0️⃣6️⃣ **Chapter 06** | **Authorization Models (RBAC, ABAC & Ownership)**<br>• RBAC permission matrix • Declarative permission middleware • BOLA/IDOR defence • Resource ownership & multi-tenancy | [Read Chapter 06](./day04/notes/06-authorization-models-rbac-abac-and-ownership.md) |
+| 0️⃣7️⃣ **Chapter 07** | **Cryptographic Password Storage & Hashing**<br>• Encoding vs encryption vs hashing • Why MD5/SHA-256 fail • Argon2id & bcrypt work factors • Salts & cost calibration | [Read Chapter 07](./day04/notes/07-password-hashing-and-cryptographic-storage.md) |
+| 0️⃣8️⃣ **Chapter 08** | **Threat Modeling, Attacks & Defensive Countermeasures**<br>• HTTP 401 vs 403 semantics • Brute-force & credential stuffing • User-enumeration elimination • Timing attacks & dummy hashing | [Read Chapter 08](./day04/notes/08-security-attacks-threat-modeling-and-defenses.md) |
+| 0️⃣9️⃣ **Chapter 09** | **End-to-End Request Pipeline & Engineering Roadmap**<br>• Complete 7-stage secure request pipeline • 18-point production checklist • Hands-on projects & self-assessment | [Read Chapter 09](./day04/notes/09-end-to-end-request-lifecycle-and-project-roadmap.md) |

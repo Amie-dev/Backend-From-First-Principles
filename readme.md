@@ -156,9 +156,12 @@ Backend-From-First-Principles/
 ├── day02/                               # Day 02: Express Routing & URL Architecture
 │   ├── notes/                           # 📚 6 Theory Notes (Markdown)
 │   └── code/                            # 💻 Production-Grade Express Routing Codebase
-└── day03/                               # Day 03: Serialization & Deserialization Deep Dive
-    ├── notes/                           # 📚 6 Theory Notes (Markdown)
-    └── code/                            # 💻 Express / Node.js Serialization Codebase & Benchmarks
+├── day03/                               # Day 03: Serialization & Deserialization Deep Dive
+│   ├── notes/                           # 📚 6 Theory Notes (Markdown)
+│   └── code/                            # 💻 Express / Node.js Serialization Codebase & Benchmarks
+└── day04/                               # Day 04: Authentication & Authorization Deep Dive
+    ├── notes/                           # 📚 9 Theory Notes (Markdown)
+    └── code/                            # 💻 Express + JWT + bcrypt AuthN/AuthZ Codebase (RBAC, API keys, RTR)
 ```
 
 ---
